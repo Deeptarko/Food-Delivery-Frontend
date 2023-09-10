@@ -1,0 +1,18 @@
+.filter{
+    /* border: 2px solid black; */
+    width: 70vw;
+    height: 10vh;
+    display: grid;
+    
+    place-items: center;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+
+@media (max-width: 62em){
+    .filter{
+        width: 100vw;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}

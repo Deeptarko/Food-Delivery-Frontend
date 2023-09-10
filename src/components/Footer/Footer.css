@@ -1,0 +1,10 @@
+.footer{
+    padding: 4rem 4rem;
+    background-color: #2d2d32;
+    position: fixed;
+    height: 5rem;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}

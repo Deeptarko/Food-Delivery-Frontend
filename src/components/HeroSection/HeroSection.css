@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:wght@500&display=swap");
+
+.hero-section {
+  margin-top: 5rem;
+  display: flex;
+  /* height: 60vh; */
+  /* border: 2px solid red; */
+}
+
+.hero-leftPart {
+  width: 60%;
+  padding-right: 7rem;
+}
+.hero-leftPart .headline {
+  font-family: "Rubik", sans-serif;
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.hero-leftPart p {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.hero-leftPart-bottom {
+  margin-top: 3rem;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+}
+.hero-leftPart-bottom .button-div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid palevioletred; */
+}
+.hero-leftPart-bottom .button-div button {
+  text-align: center;
+  padding: 1.5rem;
+  width: 15rem;
+  background-color: black;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+
+.hero-leftPart-bottom .img {
+  /* border: 2px solid yellow; */
+  width: 50%;
+  padding-left: 2rem;
+}
+
+.hero-leftPart-bottom .img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-rightPart {
+  width: 40%;
+}
+.hero-rightPart img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+@media (max-width:30em){
+    .hero-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-leftPart{
+        width: 90%;
+        padding: 0;
+    }
+    .hero-leftPart-bottom .button-div button {
+        
+        width: 10rem;
+        height: 6rem;
+        
+      }
+
+      .hero-rightPart {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+      }
+}

@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&family=Rubik:wght@500&display=swap');
+
+.menu-section{
+    display: flex;
+    
+}
+
+.menu-leftpart{
+    width: 70%;
+    /* border: 2px solid red; */
+    padding: 5rem;
+    min-height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.menu-rightpart{
+    width: 30%;
+    /* border: 2px solid pink; */
+}
+
+
+.orders span{
+    font-size: 20px;
+}
+
+.order-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media (max-width:30em){
+
+    .menu-leftpart{
+        grid-template-columns: repeat(1,1fr);
+        width: 60%;
+        padding: 2rem;
+        margin: 0;
+    }
+
+    .menu-rightpart{
+        width: 40%;
+        
+    }
+
+    
+}

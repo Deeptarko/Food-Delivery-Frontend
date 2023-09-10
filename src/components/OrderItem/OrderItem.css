@@ -1,0 +1,40 @@
+.order-item{
+    border: 2px solid red;
+    width: 100%;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    /* height: 50%; */
+}
+.order-item span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    
+}
+
+.order-item-details{
+    display: flex;
+ 
+}
+.order-item-details img{
+    width: 100px;
+    height: 100px;
+    
+}
+
+.order-item-name{
+    margin: 0 0.75rem;
+}
+
+
+@media (max-width:30em){
+
+    .order-item-details{
+       display: block;
+     
+    }
+
+    .order-item-name{
+        margin: 0 0;
+    }
+    
+}
