@@ -13,6 +13,7 @@ export const menuSlice = createSlice({
     menuItems: [],
     loading: false,
     error: null,
+  
   },
   reducers: {
     addItem: (state, action) => {

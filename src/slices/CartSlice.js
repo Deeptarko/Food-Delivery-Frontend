@@ -8,17 +8,29 @@ export const cartSlice = createSlice({
   },
   reducers: {
     addItem: (state, action) => {
-      const item1 = state.cartItems.find(
+      const item = state.cartItems.find(
         (item) => item.name === action.payload.name
       );
-      if (item1) {
-        item1.quantity = action.payload.quantity;
+      if (item) {
+        item.quantity = action.payload.quantity;
       } else {
         state.cartItems.push(action.payload);
       }
     },
     removeItem: (state, action) => {
-      state.cartItems.pop();
+      const { id, quantity } = action.payload;
+
+      const item = state.cartItems.find((item) => item.id == id);
+
+      if (item != null && quantity > 0) {
+        item.quantity = quantity;
+      }
+      if (item != null && quantity == 0) {
+        let newCartItems = state.cartItems.filter(
+          (cartItem) => cartItem != item
+        );
+        state.cartItems = newCartItems;
+      }
     },
   },
 });

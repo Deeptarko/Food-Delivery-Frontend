@@ -9,24 +9,33 @@ import { fetchItems } from "../../slices/MenuSlice";
 const MenuSection = () => {
   const { cartItems } = useSelector((state) => state.cart);
   const { menuItems, loading, error } = useSelector((state) => state.menu);
+  const { price, category } = useSelector((state) => state.filters);
+
+  // console.log(price, category);
+
+  const filteredMenuItems = menuItems
+    .filter((item) => price==0?true:item.price < price)
+    .filter((item) => (category == null ? true : item.category == category));
+
+  // console.log(filteredMenuItems);
   const dispatch = useDispatch();
 
+  // console.log(filteredMenuItems);
   useEffect(() => {
     dispatch(fetchItems());
   }, []);
 
   return (
     <div className="menu-section">
-
       {/* Menu List Starts Here */}
       <div className="menu-leftpart">
         {loading == true
           ? "Loading"
-          : menuItems.map((item, key) => <MenuCard key={key} />)}
+          : filteredMenuItems?.map((item, key) => <MenuCard key={item.id} id={item.id} name={item.name} price={item.price} />)}
       </div>
 
-       {/* Cart Item List Starts Here */}
-       
+      {/* Cart Item List Starts Here */}
+
       <div className="menu-rightpart">
         <div className="orders">
           <span>Current Orders</span>

@@ -1,9 +1,15 @@
 .menu-card{
     width: 90%;
     height: 10%;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     margin-bottom: 2rem;
 }
+.menu-card .name{
+    font-size: 2rem;
+    margin-bottom: .75rem;
+}
+
+
 
 .item-img img{
     object-fit: cover;
