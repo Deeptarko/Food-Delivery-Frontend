@@ -1,0 +1,96 @@
+.login-container{
+    /* border: 2px solid red; */
+    height: 91.7vh;
+    display: flex;
+}
+
+.login-container .login-card{
+    /* border: 2px solid green; */
+    border: 1px solid grey;
+    margin: auto;
+    height: 70vh;
+    justify-content: center;
+    width: 60vw;
+}
+
+.login-card .left-section{
+    float: left;
+    width: 40%;
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?cs=srgb&dl=pexels-chan-walrus-958545.jpg&fm=jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(0px);
+}
+
+.login-card .right-section{
+    /* border: 2px solid black; */
+    float: right;
+    width: 60%;
+    height: 100%;
+}
+
+.login-card .right-section .login-title{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+
+.login-card .right-section .login-form{
+    /* border: 2px solid red; */
+    font-size: medium;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.login-form .input-label{
+    color: grey;
+}
+
+.login-form .form-input{
+    font-size: large;
+    display: block;
+    width: 100%;
+    color: black;
+    padding: 10px;
+    border: 0;
+    border-bottom: 1px solid grey;
+    margin-top: 10px;
+}
+
+.form-control{
+    margin-bottom: 30px;
+}
+
+.login-form .login-btn{
+    font-size: 20px;
+    padding: 10px 20px;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 100px;
+    color: white;
+    background-color: rgb(225, 187, 115);
+    border: 0;
+}
+
+.login-signup-link{
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 62em){
+    .login-container .left-section{
+        display: none;
+    }
+
+    .login-container .right-section{
+    width: 100%;
+    height: 100%;
+    }
+}
