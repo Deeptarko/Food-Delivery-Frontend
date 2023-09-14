@@ -5,6 +5,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { GrClose } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import DropdownMenu from "../DropdownMenu/DropdownMenu";
+import DrowndownMenuNavbar from "../DropdownMenuNavbar/DrowndownMenuNavbar";
 
 const Navbar = () => {
   const [showNavbarIcon, setShowNavbarIcon] = useState(false);
@@ -36,9 +37,12 @@ const Navbar = () => {
               </Link>
             </li>
             <ul className="navbar-link">
-              <Link className="navbar-link-item">
-                <DropdownMenu name="MY PROFILE" menu={['My Orders','Logout']}/>
-              </Link>
+              {/* <li className="navbar-link-item"> */}
+                <DrowndownMenuNavbar
+                  name="MY PROFILE"
+                  menu={[{ name: "My Orders", link: "/orders" },{ name: "Login", link: "/login" }]}
+                />
+              {/* </li> */}
             </ul>
           </ul>
         </nav>

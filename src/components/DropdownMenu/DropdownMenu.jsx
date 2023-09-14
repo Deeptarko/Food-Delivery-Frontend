@@ -27,8 +27,8 @@ const DropdownMenu = ({ name = "Dropdown", menu = ["Item 1", "Item 2"] }) => {
       </button>
       <div className="dropdown-menu">
         {menu.map((filterName, index) => (
-          <li key={index} onClick={()=>setFilters(filterName, name)}>
-          {filterName}
+          <li key={index} onClick={() => setFilters(filterName, name)}>
+            {filterName}
           </li>
         ))}
       </div>
