@@ -14,6 +14,7 @@ const OrderPage = () => {
         </div>
         <div className=''>
           <OrderCard/>
+          <OrderCard/>
         </div>
       </div>
     </>
