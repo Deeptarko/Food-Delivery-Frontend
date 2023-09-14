@@ -1,0 +1,185 @@
+.order-card-container {
+    /* border: 2px solid blue; */
+    padding: 30px;
+    width: 95vw;
+    margin: auto;
+
+}
+
+.order-card-container .card-header {
+    display: flex;
+    /* border: 2px solid red; */
+    width: 98%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.order-card-container .card-header .order-pill {
+    font-size: 15px;
+    font-weight: 700;
+    border: 2px solid white;
+    padding: 10px 30px;
+    background-color: rgb(244, 237, 237);
+    border-radius: 50px;
+}
+
+.order-pill .order-id {
+    color: rgb(55, 55, 202);
+}
+
+.order-card-container .card-header .order-date {
+    font-size: 15px;
+    margin: auto 0;
+    margin-left: 30px;
+    color: grey;
+}
+
+.order-card-container .card-header .track-btn {
+    margin-left: auto;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: orange;
+    color: white;
+    border: 0;
+    border-radius: 50px;
+    width: 10vw;
+}
+
+.order-item-container {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.order-item-container img {
+    width: 150px;
+    height: 120px;
+}
+
+.order-item-container .card-item {
+    margin: auto 0;
+}
+
+.order-item-container .card-item .item-info {
+    /* border: 2px solid red; */
+    max-width: 20vw;
+    padding: 15px 30px;
+}
+
+.order-item-container .card-item .item-info .item-name {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.item-info .item-details .item-qty {
+    color: grey;
+}
+
+.item-info .item-details .item-price {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.order-item-container .item-status {
+    margin: auto auto;
+}
+
+.order-card-container .item-status .status-title,
+.order-card-container .delivery-status .delivery-title {
+    font-size: 15px;
+    color: grey;
+    font-weight: 500;
+}
+
+.order-card-container .item-status .status-info {
+    font-size: 30px;
+    color: red;
+}
+
+.order-card-container .delivery-status {
+    margin: auto auto;
+}
+
+.order-card-container .delivery-status .delivery-info {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.order-card-container .order-card-footer {
+    border: 1px solid grey;
+    border-top: 0;
+    display: flex;
+}
+
+.order-card-footer .cancel-btn {
+    font-size: 25px;
+    padding: 10px;
+    background: white;
+    border: 0;
+    border-right: 1px solid grey;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.order-card-footer .paid-info {
+    margin: auto 0;
+    font-size: 15px;
+    color: grey;
+    margin-left: 20px;
+}
+
+.order-card-footer .total-price {
+    font-size: 30px;
+    margin-left: auto;
+    padding: 10px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .order-card-container .card-header {
+        display: block;
+    }
+
+    .order-card-container .card-header .order-pill {
+        text-align: center;
+    }
+
+    .order-card-container .card-header .order-date {
+        margin-top: 20px;
+    }
+
+    .order-card-container .card-header .track-btn {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .order-item-container {
+        display: block;
+        text-align: center;
+    }
+
+    .order-item-container .card-item .item-info {
+        max-width: 100%;
+    }
+
+    .order-card-footer .paid-info{
+        display: none;
+    }
+
+    .order-card-footer .total-price{
+        font-size: 20px;
+    }
+
+    .order-card-footer .cancel-btn{
+        padding: 5px;
+        font-size: 15px;
+    }
+
+
+
+
+}

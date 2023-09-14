@@ -1,0 +1,44 @@
+.order-container{
+    /* border: 2px solid red; */
+    height: 91.7vh;
+    width: 100vw;
+}
+
+.order-container .order-header{
+    /* border: 2px solid green; */
+    padding: 20px;
+    margin-left: 30px;
+    display: flex;
+}
+
+.order-header .title{
+    color: rgb(80, 78, 78);
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.order-header .description{
+    color: rgb(112, 111, 111);
+    font-size: 15px;
+    width: 20%;
+    margin: auto 0;
+    margin-left: 20px;
+}
+
+.order-card-container{
+    border: 2px solid grey;
+}
+
+@media only screen and (max-width: 768px) {
+    .order-container .order-header{
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+
+    
+.order-header .description{
+    width: 100%;
+    margin: 0;
+}
+}
