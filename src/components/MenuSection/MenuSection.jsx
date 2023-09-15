@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import "./MenuSection.css";
 import MenuCard from "../MenuCard/MenuCard";
 import OrderItem from "../OrderItem/OrderItem";
-import { fetchDataFromApi } from "../../utils/api";
+// import { fetchDataFromApi } from "../../utils/api";
 import { fetchItems } from "../../slices/MenuSlice";
 
 const MenuSection = () => {
@@ -13,9 +13,17 @@ const MenuSection = () => {
 
   // console.log(price, category);
 
-  const filteredMenuItems = menuItems
-    .filter((item) => price==0?true:item.price < price)
-    .filter((item) => (category == null ? true : item.category == category));
+  let filteredMenuItems = [];
+  console.log(menuItems, error);
+
+  filteredMenuItems =
+    error == false
+      ? menuItems
+          .filter((item) => (price == 0 ? true : item.price < price))
+          .filter((item) =>
+            category == null ? true : item.category == category
+          )
+      : [];
 
   // console.log(filteredMenuItems);
   const dispatch = useDispatch();
@@ -31,7 +39,14 @@ const MenuSection = () => {
       <div className="menu-leftpart">
         {loading == true
           ? "Loading"
-          : filteredMenuItems?.map((item, key) => <MenuCard key={item.id} id={item.id} name={item.name} price={item.price} />)}
+          : filteredMenuItems?.map((item, key) => (
+              <MenuCard
+                key={item.id}
+                id={item.id}
+                name={item.name}
+                price={item.price}
+              />
+            ))}
       </div>
 
       {/* Cart Item List Starts Here */}
