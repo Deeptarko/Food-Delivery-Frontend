@@ -33,7 +33,7 @@ const Login = () => {
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
-              <div className="forn-control">
+              <div className="form-control">
                 <label className="input-label">Password</label>
                 <input
                   className="form-input"
@@ -44,7 +44,7 @@ const Login = () => {
                 />
               </div>
               <button
-                className="login-btn"
+                className="login-btn btn"
                 type="submit"
                 onClick={loginHandler}
               >
