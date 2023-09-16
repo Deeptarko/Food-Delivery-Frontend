@@ -26,7 +26,7 @@ export const menuSlice = createSlice({
   extraReducers: (builder) => {
     builder.addCase(fetchItems.fulfilled, (state, action) => {
       state.loading = false;
-      state.error=false;
+      state.error = false;
       state.menuItems = action.payload;
     });
     builder.addCase(fetchItems.pending, (state, action) => {

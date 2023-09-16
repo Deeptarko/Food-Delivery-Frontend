@@ -5,6 +5,7 @@ import MenuCard from "../MenuCard/MenuCard";
 import OrderItem from "../OrderItem/OrderItem";
 // import { fetchDataFromApi } from "../../utils/api";
 import { fetchItems } from "../../slices/MenuSlice";
+import Spinner from "../Spinner/Spinner";
 
 const MenuSection = () => {
   const { cartItems } = useSelector((state) => state.cart);
@@ -38,7 +39,7 @@ const MenuSection = () => {
       {/* Menu List Starts Here */}
       <div className="menu-leftpart">
         {loading == true
-          ? "Loading"
+          ? <Spinner/>
           : filteredMenuItems?.map((item, key) => (
               <MenuCard
                 key={item.id}
