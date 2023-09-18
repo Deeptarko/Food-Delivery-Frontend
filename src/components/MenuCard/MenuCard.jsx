@@ -41,13 +41,13 @@ const MenuCard = ({
 
   return (
     <div className="menu-card">
-      <span className="name">Name - {name} </span>
       <div className="item-img">
         <img
           src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg"
           alt=""
         />
       </div>
+      <span className="name">Name - {name} </span>
       <div className="item-details">
         <span className="price">Price - {price} </span>
 

@@ -12,10 +12,10 @@ const MenuSection = () => {
   const { menuItems, loading, error } = useSelector((state) => state.menu);
   const { price, category } = useSelector((state) => state.filters);
 
-  // console.log(price, category);
+ 
 
   let filteredMenuItems = [];
-  console.log(menuItems, error);
+
 
   filteredMenuItems =
     error == false
@@ -26,10 +26,10 @@ const MenuSection = () => {
           )
       : [];
 
-  // console.log(filteredMenuItems);
+ 
   const dispatch = useDispatch();
 
-  // console.log(filteredMenuItems);
+
   useEffect(() => {
     dispatch(fetchItems());
   }, []);

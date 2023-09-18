@@ -1,36 +1,46 @@
-.menu-card{
-    width: 90%;
-    height: 10%;
-    /* border: 2px solid yellow; */
-    margin-bottom: 2rem;
-}
-.menu-card .name{
-    font-size: 2rem;
-    margin-bottom: .75rem;
-}
+.menu-card {
+  width: 65%;
+  max-height: 250px;
+  height: 100%;
+  /* border: 2px solid yellow; */
+  margin-bottom: 3rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  font-size: 2rem;
 
-
-
-.item-img img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    /* padding: 0.5rem; */
 }
 
-.item-details{
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.8rem;
+.menu-card .name {
+  display: block;
+  margin: auto;
+  width: 100%;
+  /* border: 2px solid red; */
 }
 
-.item-details-calc .plus-icon{
-    margin-right: 0.5rem;
-    cursor: pointer;
-    
-}
-.item-details-calc .minus-icon{
-    margin-left: 0.5rem;
-    cursor: pointer;
+.item-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.item-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /* padding: 0.5rem; */
+}
+
+.item-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+}
+
+.item-details-calc .plus-icon {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.item-details-calc .minus-icon {
+  margin-left: 0.5rem;
+  cursor: pointer;
+}

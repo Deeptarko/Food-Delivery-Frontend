@@ -12,7 +12,8 @@
     padding: 5rem;
     min-height: 60vh;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 2rem;
     
 }
 
@@ -31,16 +32,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 
 
-@media (max-width:30em){
+@media (max-width:60em){
 
     .menu-leftpart{
         grid-template-columns: repeat(1,1fr);
         width: 60%;
-        padding: 2rem;
+        padding: 1rem;
         margin: 0;
     }
 
