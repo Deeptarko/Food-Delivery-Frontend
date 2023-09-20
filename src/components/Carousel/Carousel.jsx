@@ -33,7 +33,7 @@ const Carousel = () => {
       <MdArrowBackIos
         className="carousel-icon left-arrow"
         id="left"
-        onClick={handleScrollLeft}
+        onClick={handleScrollRight}
       />
       <ul
         className={isDragging == true ? "carousel dragging" : "carousel"}
@@ -176,7 +176,7 @@ const Carousel = () => {
       <MdArrowForwardIos
         className="carousel-icon right-arrow"
         id="right"
-        onClick={handleScrollRight}
+        onClick={handleScrollLeft}
       />
     </section>
   );
