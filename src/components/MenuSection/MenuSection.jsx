@@ -32,8 +32,10 @@ const MenuSection = () => {
 
   return (
     <>
-      <h1 style={{margin:'2rem 4rem',fontSize:'2.8em'}}>Inspiration for your first order</h1>
-      <Carousel />
+      <h1 style={{margin:'1.5rem 4rem',fontSize:'2.8em'}}>Inspiration for your first order</h1>
+      <Carousel imageLinks={["https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&w=600"]} />
+      <h1 style={{margin:'1.5rem 4rem',fontSize:'2.8em'}}>Top Brands For You</h1>
+      <Carousel imageLinks={["https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&w=600"]} />
       <div className="menu-section">
         {/* Menu List Starts Here */}
         <div className="menu-leftpart">

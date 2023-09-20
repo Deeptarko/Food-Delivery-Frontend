@@ -2,7 +2,8 @@ import React, { useRef, useState } from "react";
 import "./Carousel.css";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 
-const Carousel = () => {
+const Carousel = ({imageLinks}) => {
+
   const carouselElement = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -45,133 +46,124 @@ const Carousel = () => {
         <li className="card">
           <div className="carousel-img">
             <img
-              src="https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src={imageLinks[0]}
               alt="food-image"
             />
           </div>
           <h2>Name</h2>
           <span>Pizza</span>
         </li>
+       
         <li className="card">
           <div className="carousel-img">
             <img
-              src="https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src={imageLinks[0]}
               alt="food-image"
             />
           </div>
           <h2>Name</h2>
           <span>Pizza</span>
         </li>
+       
         <li className="card">
           <div className="carousel-img">
             <img
-              src="https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src={imageLinks[0]}
               alt="food-image"
             />
           </div>
           <h2>Name</h2>
           <span>Pizza</span>
         </li>
+       
         <li className="card">
           <div className="carousel-img">
             <img
-              src="https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src={imageLinks[0]}
               alt="food-image"
             />
           </div>
           <h2>Name</h2>
           <span>Pizza</span>
         </li>
+       
         <li className="card">
           <div className="carousel-img">
             <img
-              src="https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src={imageLinks[0]}
               alt="food-image"
             />
           </div>
           <h2>Name</h2>
           <span>Pizza</span>
         </li>
+       
         <li className="card">
           <div className="carousel-img">
             <img
-              src="https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src={imageLinks[0]}
               alt="food-image"
             />
           </div>
           <h2>Name</h2>
           <span>Pizza</span>
         </li>
+       
         <li className="card">
           <div className="carousel-img">
             <img
-              src="https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src={imageLinks[0]}
               alt="food-image"
             />
           </div>
           <h2>Name</h2>
           <span>Pizza</span>
         </li>
+       
         <li className="card">
           <div className="carousel-img">
             <img
-              src="https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src={imageLinks[0]}
               alt="food-image"
             />
           </div>
           <h2>Name</h2>
           <span>Pizza</span>
         </li>
+       
         <li className="card">
           <div className="carousel-img">
             <img
-              src="https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src={imageLinks[0]}
               alt="food-image"
             />
           </div>
           <h2>Name</h2>
           <span>Pizza</span>
         </li>
+       
         <li className="card">
           <div className="carousel-img">
             <img
-              src="https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src={imageLinks[0]}
               alt="food-image"
             />
           </div>
           <h2>Name</h2>
           <span>Pizza</span>
         </li>
+       
         <li className="card">
           <div className="carousel-img">
             <img
-              src="https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src={imageLinks[0]}
               alt="food-image"
             />
           </div>
           <h2>Name</h2>
           <span>Pizza</span>
         </li>
-        <li className="card">
-          <div className="carousel-img">
-            <img
-              src="https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="food-image"
-            />
-          </div>
-          <h2>Name</h2>
-          <span>Pizza</span>
-        </li>
-        <li className="card">
-          <div className="carousel-img">
-            <img
-              src="https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="food-image"
-            />
-          </div>
-          <h2>Name</h2>
-          <span>Pizza</span>
-        </li>
+       
       </ul>
       <MdArrowForwardIos
         className="carousel-icon right-arrow"

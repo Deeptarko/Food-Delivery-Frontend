@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 0;
  
 }
 .carousel-section .carousel {
@@ -22,6 +23,7 @@
 .carousel.dragging .card{
     cursor: grab;
     user-select: none;
+  
 }
 
 .carousel-img img {
@@ -32,7 +34,7 @@
 }
 
 .carousel .card {
-  height: 342px;
+  height: 3oopx;
   width: 200px;
   list-style: none;
   border-radius: 8px;
@@ -42,6 +44,7 @@
   flex-direction: column;
   /* border: 2px solid red; */
   cursor: pointer;
+  border: 0;
 }
 .carousel .card h2 {
   font-weight: 500;
