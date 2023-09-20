@@ -1,0 +1,79 @@
+.carousel-section {
+  /* border: 2px solid black; */
+  max-width: 100%;
+  padding: 0 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.carousel-section .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3)-12px);
+  gap: 16px;
+}
+
+.carousel{
+    overflow-x: hidden;
+}
+
+
+.carousel.dragging .card{
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel-img img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.carousel .card {
+  height: 342px;
+  width: 200px;
+  list-style: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  cursor: pointer;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+.carousel .card span {
+  color: #6a6d78;
+  font-size: 1.5rem;
+}
+
+
+
+
+.carousel-section .carousel-icon {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #fff;
+  line-height: 50px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.left-arrow {
+  left: 2px;
+}
+.right-arrow {
+  right: 2px;
+}
+
+@media (max-width: 62em) {
+  .carousel-section .carousel {
+    grid-auto-columns: calc((100% / 2)-12px);
+  }
+}
